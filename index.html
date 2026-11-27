@@ -470,7 +470,7 @@ body.on-sub .wa-float{display:none}
 .roteiro-hero h1 .dias{color:var(--orange)}
 .roteiro-lead{font-family:"Lora",Georgia,serif;font-style:italic;font-size:18.5px;color:var(--ink-soft);margin:12px 0 18px;max-width:640px}
 .resumo-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
-.resumo-chips span{display:inline-flex;align-items:center;gap:7px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14.5px;font-weight:700;color:var(--ink)}
+.resumo-chips>span{display:inline-flex;align-items:center;gap:7px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14.5px;font-weight:700;color:var(--ink)}
 .resumo-chips svg{color:var(--teal)}
 
 /* carrossel grande */
@@ -688,8 +688,11 @@ body.no-sticky footer{padding-bottom:96px}
 .r2-body{padding:18px;display:flex;flex-direction:column;gap:11px;flex:1}
 .r2-tags{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .tag-dias{background:#e4f0e6;color:var(--teal-dark);font-weight:800;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;padding:6px 12px;border-radius:999px}
-.tag-ritmo{font-weight:800;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;padding:6px 12px;border-radius:999px}
-.ritmo-leve,.ritmo-moderado,.ritmo-avancado{background:#e4f0e6;color:var(--green-dark)}
+.tag-ritmo{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.8px}
+.tag-ritmo .ritmo-ico{flex:none;color:inherit}
+.ritmo-leve{color:#2e7d32}
+.ritmo-moderado{color:#a85a24}
+.ritmo-avancado{color:#7a2e2e}
 .r2-body h3{font-size:22px}
 .r2-slide-line{margin:0;color:var(--muted);font-size:14.5px}
 .r2-checks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
@@ -1087,9 +1090,9 @@ body.no-sticky footer{padding-bottom:96px}
         <h3>Entenda as distâncias entre as cidades</h3>
         <p>A Chapada Diamantina é uma região enorme, com atrativos espalhados por diferentes cidades. Nem todos os passeios ficam próximos uns dos outros. Para conhecer os principais atrativos, muitas vezes é necessário dividir a hospedagem entre duas ou mais cidades.</p>
         <ul class="dist-list">
-          <li><svg class="dist-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg><div class="dist-info"><span>Lençóis → Mucugê</span><strong>147 km</strong></div></li>
-          <li><svg class="dist-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg><div class="dist-info"><span>Mucugê → Ibicoara</span><strong>77 km</strong></div></li>
-          <li><svg class="dist-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg><div class="dist-info"><span>Lençóis → Ibicoara</span><strong>225 km</strong></div></li>
+          <li><svg class="dist-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg><div class="dist-info"><span>Lençóis → Mucugê</span><strong>147 km</strong></div></li>
+          <li><svg class="dist-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg><div class="dist-info"><span>Mucugê → Ibicoara</span><strong>77 km</strong></div></li>
+          <li><svg class="dist-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg><div class="dist-info"><span>Lençóis → Ibicoara</span><strong>225 km</strong></div></li>
         </ul>
         <p>Ficar hospedado todos os dias numa cidade só gera deslocamentos longos e você aproveita menos os passeios. Dependendo dos dias e dos atrativos que você quer conhecer, recomendamos dividir a hospedagem entre duas cidades.</p>
       </div>
@@ -1163,7 +1166,7 @@ body.no-sticky footer{padding-bottom:96px}
           </div>
           <div class="r2-body">
             <div class="r2-tags">
-              <span class="tag-ritmo ritmo-moderado">Ritmo moderado</span>
+              <span class="tag-ritmo ritmo-moderado"><svg class="ritmo-ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.4" cy="4" r="1.9"/><rect x="6.2" y="7" width="3.8" height="7.4" rx="1.8"/><path d="M12.5 6.5 11.1 11.6"/><path d="M12.3 8.3 16.7 11.2"/><path d="M17.1 9.3 18.1 20.3"/><path d="M11.1 11.6 13.9 14.9 14.7 19.9"/><path d="M11.1 11.6 8.5 14.8 6.7 19.5"/></svg>Moderado</span>
             </div>
             <h3>Chapada Completa - 8 dias</h3>
             <ul class="r2-checks">
@@ -1218,7 +1221,7 @@ body.no-sticky footer{padding-bottom:96px}
           </div>
           <div class="r2-body">
             <div class="r2-tags">
-              <span class="tag-ritmo ritmo-avancado">Ritmo avançado</span>
+              <span class="tag-ritmo ritmo-avancado"><svg class="ritmo-ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.4" cy="4" r="1.9"/><rect x="6.2" y="7" width="3.8" height="7.4" rx="1.8"/><path d="M12.5 6.5 11.1 11.6"/><path d="M12.3 8.3 16.7 11.2"/><path d="M17.1 9.3 18.1 20.3"/><path d="M11.1 11.6 13.9 14.9 14.7 19.9"/><path d="M11.1 11.6 8.5 14.8 6.7 19.5"/></svg>Avançado</span>
             </div>
             <h3>Vale do Pati</h3>
             <ul class="r2-checks">
@@ -1265,7 +1268,7 @@ body.no-sticky footer{padding-bottom:96px}
           </div>
           <div class="r2-body">
             <div class="r2-tags">
-              <span class="tag-ritmo ritmo-moderado">Ritmo moderado</span>
+              <span class="tag-ritmo ritmo-moderado"><svg class="ritmo-ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.4" cy="4" r="1.9"/><rect x="6.2" y="7" width="3.8" height="7.4" rx="1.8"/><path d="M12.5 6.5 11.1 11.6"/><path d="M12.3 8.3 16.7 11.2"/><path d="M17.1 9.3 18.1 20.3"/><path d="M11.1 11.6 13.9 14.9 14.7 19.9"/><path d="M11.1 11.6 8.5 14.8 6.7 19.5"/></svg>Moderado</span>
             </div>
             <h3>Roteiro Completo - 4 dias</h3>
             <ul class="r2-checks">
@@ -1308,7 +1311,7 @@ body.no-sticky footer{padding-bottom:96px}
           </div>
           <div class="r2-body">
             <div class="r2-tags">
-              <span class="tag-ritmo ritmo-leve">Ritmo leve</span>
+              <span class="tag-ritmo ritmo-leve"><svg class="ritmo-ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.4" cy="4" r="1.9"/><rect x="6.2" y="7" width="3.8" height="7.4" rx="1.8"/><path d="M12.5 6.5 11.1 11.6"/><path d="M12.3 8.3 16.7 11.2"/><path d="M17.1 9.3 18.1 20.3"/><path d="M11.1 11.6 13.9 14.9 14.7 19.9"/><path d="M11.1 11.6 8.5 14.8 6.7 19.5"/></svg>Leve</span>
             </div>
             <h3>Rotas Cristais - 3 dias</h3>
             <ul class="r2-checks">
@@ -1350,7 +1353,7 @@ body.no-sticky footer{padding-bottom:96px}
           </div>
           <div class="r2-body">
             <div class="r2-tags">
-              <span class="tag-ritmo ritmo-moderado">Ritmo moderado</span>
+              <span class="tag-ritmo ritmo-moderado"><svg class="ritmo-ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.4" cy="4" r="1.9"/><rect x="6.2" y="7" width="3.8" height="7.4" rx="1.8"/><path d="M12.5 6.5 11.1 11.6"/><path d="M12.3 8.3 16.7 11.2"/><path d="M17.1 9.3 18.1 20.3"/><path d="M11.1 11.6 13.9 14.9 14.7 19.9"/><path d="M11.1 11.6 8.5 14.8 6.7 19.5"/></svg>Moderado</span>
             </div>
             <h3>Rotas das Cachoeiras - 2 dias</h3>
             <ul class="r2-checks">
@@ -1394,7 +1397,7 @@ body.no-sticky footer{padding-bottom:96px}
           </div>
           <div class="r2-body">
             <div class="r2-tags">
-              <span class="tag-ritmo ritmo-leve">Ritmo leve</span>
+              <span class="tag-ritmo ritmo-leve"><svg class="ritmo-ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.4" cy="4" r="1.9"/><rect x="6.2" y="7" width="3.8" height="7.4" rx="1.8"/><path d="M12.5 6.5 11.1 11.6"/><path d="M12.3 8.3 16.7 11.2"/><path d="M17.1 9.3 18.1 20.3"/><path d="M11.1 11.6 13.9 14.9 14.7 19.9"/><path d="M11.1 11.6 8.5 14.8 6.7 19.5"/></svg>Leve</span>
             </div>
             <h3>Passeios Leves - 4 dias</h3>
             <ul class="r2-checks">
@@ -1860,7 +1863,7 @@ body.no-sticky footer{padding-bottom:96px}
         <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 8 dias</span>
         <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Lençóis · Mucugê · Ibicoara</span>
         <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg> Grupo pequeno</span>
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></svg> Nível moderado</span>
+        <span><span class="tag-ritmo ritmo-moderado"><svg class="ritmo-ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.4" cy="4" r="1.9"/><rect x="6.2" y="7" width="3.8" height="7.4" rx="1.8"/><path d="M12.5 6.5 11.1 11.6"/><path d="M12.3 8.3 16.7 11.2"/><path d="M17.1 9.3 18.1 20.3"/><path d="M11.1 11.6 13.9 14.9 14.7 19.9"/><path d="M11.1 11.6 8.5 14.8 6.7 19.5"/></svg>Moderado</span></span>
       </div>
 
       <!-- CARROSSEL -->
@@ -2344,7 +2347,7 @@ body.no-sticky footer{padding-bottom:96px}
         <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 4 dias</span>
         <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Lençóis · Ibicoara</span>
         <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg> Grupo pequeno</span>
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></svg> Nível moderado, com um dia difícil</span>
+        <span><span class="nivel-wrap"><span class="tag-ritmo ritmo-moderado"><svg class="ritmo-ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.4" cy="4" r="1.9"/><rect x="6.2" y="7" width="3.8" height="7.4" rx="1.8"/><path d="M12.5 6.5 11.1 11.6"/><path d="M12.3 8.3 16.7 11.2"/><path d="M17.1 9.3 18.1 20.3"/><path d="M11.1 11.6 13.9 14.9 14.7 19.9"/><path d="M11.1 11.6 8.5 14.8 6.7 19.5"/></svg>Moderado</span>, com um dia difícil</span></span>
       </div>
 
       <div class="carousel" id="claCarousel">
@@ -3358,12 +3361,22 @@ body.no-sticky footer{padding-bottom:96px}
   var ICON_PIN = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>';
   var ICON_GROUP = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>';
   var ICON_LEVEL = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></svg>';
+  var ICON_HIKER = '<svg class="ritmo-ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.4" cy="4" r="1.9"/><rect x="6.2" y="7" width="3.8" height="7.4" rx="1.8"/><path d="M12.5 6.5 11.1 11.6"/><path d="M12.3 8.3 16.7 11.2"/><path d="M17.1 9.3 18.1 20.3"/><path d="M11.1 11.6 13.9 14.9 14.7 19.9"/><path d="M11.1 11.6 8.5 14.8 6.7 19.5"/></svg>';
+  function ritmoTagHtml(level){
+    var map = {
+      leve: { label: "Leve", cls: "ritmo-leve" },
+      moderado: { label: "Moderado", cls: "ritmo-moderado" },
+      avancado: { label: "Avançado", cls: "ritmo-avancado" }
+    };
+    var m = map[level] || map.moderado;
+    return '<span class="tag-ritmo ' + m.cls + '">' + ICON_HIKER + m.label + "</span>";
+  }
 
   var GEN = {
     leves: {
       nome: "Passeios Leves", dias: "4 dias",
       lead: "Quatro dias de passeios tranquilos, sem trilhas longas: feito pra casais, famílias e quem prefere caminhadas leves, com deslocamentos organizados.",
-      nivel: "Nível leve", base: null,
+      nivel: "leve", base: null,
       fotos: [
         ["assets/pratinha-lagoa.jpg", "Fazenda Pratinha", "Fazenda Pratinha: trapiche de madeira sobre a lagoa de águas cristalinas"],
         ["assets/mosquito-capa.jpg", "Cachoeira do Mosquito", "Cachoeira do Mosquito entre os paredões rochosos"],
@@ -3412,7 +3425,7 @@ body.no-sticky footer{padding-bottom:96px}
     var chipsHtml = "<span>" + ICON_CLOCK + " " + d.dias + "</span>";
     if (d.base) chipsHtml += "<span>" + ICON_PIN + " " + d.base + "</span>";
     chipsHtml += "<span>" + ICON_GROUP + " Grupo pequeno</span>";
-    chipsHtml += "<span>" + ICON_LEVEL + " " + d.nivel + "</span>";
+    chipsHtml += "<span>" + ritmoTagHtml(d.nivel) + "</span>";
     document.getElementById("genChips").innerHTML = chipsHtml;
     genTrack.innerHTML = d.fotos.map(function(f){
       return '<div class="car-slide"><img src="' + f[0] + '" alt="' + f[2] + '" loading="lazy" /><div class="car-cap">' + f[1] + "</div></div>";
